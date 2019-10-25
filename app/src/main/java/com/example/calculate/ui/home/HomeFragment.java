@@ -1,5 +1,6 @@
 package com.example.calculate.ui.home;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,9 +28,25 @@ public class HomeFragment extends Fragment {
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         final TextView textView = root.findViewById(R.id.text_home);
-        btn1=(Button)root.findViewById(R.id.btn1);
-        btn2=(Button)root.findViewById(R.id.btn2);
 
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+            btn1=(Button)root.findViewById(R.id.btn1);
+            btn1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    btn1.setText("Hola");
+                }
+            });
+        }
+        else{
+            btn2=(Button)root.findViewById(R.id.btn2);
+            btn2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    btn2.setText("Hola");
+                }
+            });
+        }
 
         homeViewModel.getText().observe(this, new Observer<String>() {
             @Override
@@ -38,18 +55,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btn1.setText("Hola");
-            }
-        });
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btn2.setText("Hola");
-            }
-        });
         return root;
     }
 }
