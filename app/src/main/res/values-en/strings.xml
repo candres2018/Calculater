@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Final Calculator</string>
+    <string name="limpiar">Clear</string>
+    <string name="eliminar">Delete</string>
+    <string name="otro">End</string>
+    <string name="acercade">About of</string>
+    <string name="textView_acerca">Created by Carlos Ocaña</string>
+    <string name="volver">back</string>
+    <string name="historial">History</string>
+    <string name="par_i">(</string>
+    <string name="par_d">)</string>
+    <string name="Sen">Sen</string>
+    <string name="Cos">Cos</string>
+    <string name="Tan">Tan</string>
+    <string name="Ln">Ln</string>
+    <string name="Log">Log</string>
+    <string name="Pi">Pi</string>
+    <string name="Raiz">Raiz</string>
+    <string name="Cuad">Cuad</string>
+    <string name="Cub">Cub</string>
+    <string name="Fact">Fact</string>
+    <string name="salir">out</string>
+    <string name="bienvenido">Welcome to</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+</resources>
